@@ -19,7 +19,7 @@ session.bind_transceiver({
                 consolelog("Message successfully sent")
 				console.log(pdu.message_id);
 			} else {
-                console.log("Failed to connect")
+                console.log("Failed to send message")
             }
 		});
 	}
