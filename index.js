@@ -1,6 +1,6 @@
 var smpp = require('smpp');
 var session = smpp.connect({
-	url: 'smpp://ndutahannah254@gmail.com:2775',
+	url: 'smpp://smscsim.melroselabs.com:2775',
 	auto_enquire_link_period: 10000
 });
 session.bind_transceiver({
