@@ -8,6 +8,7 @@ session.bind_transceiver({
 	password: '###'
 }, function(pdu) {
 	if (pdu.command_status == 0) {
+        console.log("Connected")
 		// Successfully bound
 		session.submit_sm({
 			destination_addr: '661',
@@ -15,8 +16,11 @@ session.bind_transceiver({
 		}, function(pdu) {
 			if (pdu.command_status == 0) {
 				// Message successfully sent
+                consolelog("Message successfully sent")
 				console.log(pdu.message_id);
-			}
+			} else {
+                console.log("Failed to connect")
+            }
 		});
 	}
 });
