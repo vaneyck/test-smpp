@@ -1,6 +1,6 @@
 var smpp = require('smpp');
 var session = smpp.connect({
-	url: 'smpp://10.204.181.73:15019',
+	url: 'smpp://test.com:15019',
 	auto_enquire_link_period: 10000
 });
 session.bind_transceiver({
