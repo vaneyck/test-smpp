@@ -1,11 +1,11 @@
 var smpp = require('smpp');
 var session = smpp.connect({
-	url: 'smpp://test.com:15019',
+	url: 'smpp://ndutahannah254@gmail.com:2775',
 	auto_enquire_link_period: 10000
 });
 session.bind_transceiver({
-	system_id: '###',
-	password: '###'
+	system_id: '894300',
+	password: 'f99609'
 }, function(pdu) {
 	if (pdu.command_status == 0) {
         console.log("Connected")
